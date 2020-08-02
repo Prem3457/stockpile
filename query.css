@@ -1,0 +1,68 @@
+@media(max-width: 768px) {
+    .fixed-top{
+        position: relative !important;
+    }
+}
+
+@media(min-width: 580px){
+    .top-bar .dropleft .dropdown-menu{
+        right: auto !important;
+        left: 100% !important
+    }
+}
+
+@media(min-width: 768px){
+    .top-bar .dropleft .dropdown-menu{
+        right: 100% !important;
+        left: auto !important
+    }
+}
+
+@media(min-width: 768px){
+    #section1 .card{
+        height: 50rem;
+    }
+}
+
+@media(min-width: 1200px){
+    #section1 .card{
+        height: 48rem;
+    }
+}
+
+@media(min-width: 1828px){
+    #section1 .card{
+        height: 52rem;
+    }
+}
+
+@media(min-width: 2171px){
+    #section1 .card{
+        height: 58rem;
+    }
+}
+
+@media(max-width: 468px){
+    #section2 .offers{
+        margin-top: 80px;
+    }
+}
+
+@media(min-width: 1200px){
+    #section2 td{
+        height: 87px !important;
+    }
+}
+
+@media(min-width: 1200px){
+    #section3 .card{
+        height: 38rem;
+    }
+}
+
+@media(max-width: 468px){
+    #section2 .table{
+        width: 50% !important;
+        height: auto;
+    }
+}

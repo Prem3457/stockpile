@@ -1,0 +1,223 @@
+body{
+    font-family: 'Montserrat',sans-serif;
+    background: rgb(78, 49, 49);
+}
+
+#dashboardMenu .sidebar{
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Images/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#dashboardMenu .name{
+    text-decoration: none;
+}
+
+#dashboardMenu .bottom-border{
+    border-bottom: 1px solid #eee;
+}
+
+#dashboardMenu .sidebar .active{
+    background-color: rgba(245, 57, 10, 0.699);
+    border-radius: 7px;
+    box-shadow: 2px 5px 20px #000;
+    transition: all 0.3s ease;
+}
+
+#dashboardMenu .sidebar .active:hover{
+    background-color: rgba(255, 52, 1, 0.884);
+    transform: translateY(-1px);
+}
+
+#dashboardMenu .top-bar{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.342);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.411);
+}
+
+.sidebar-link{
+    transition: all 0.3s ease;
+}
+
+.sidebar-link:hover{
+    background-color: rgba(199, 177, 177, 0.397);
+    border-radius: 7px;
+}
+
+.search{
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #999;
+    transition: all 0.3s ease;
+}
+
+.search:focus{
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 2px solid rgba(255, 52, 1, 0.863);
+}
+
+.search-btn{
+    border-radius: 50%;
+    padding: 10px 16px;
+    transition: all 0.3s ease;
+}
+
+.search-btn:hover{
+    background-color: #eee;
+    transform: translateY(-1px);
+}
+
+.icon-notify{
+    position: relative;
+}
+
+.icon-notify-link::after{
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: rgb(255, 52, 1);
+}
+
+.dropleft .dropdown-toggle::before{
+    display: none !important;
+}
+
+#section1 .review i{
+    color: chartreuse;
+}
+
+#section1 .buy{
+    display: block;
+    font-weight: 500;
+    color: #eee;
+    background-color: rgba(62, 185, 62, 0.863);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#section1 .buy:hover{
+    background-color: rgb(41, 219, 41);
+}
+
+.washing-machine{
+    margin: auto;
+    width: 77.5%;
+    height: auto;
+}
+
+.adidas{
+    margin-top: 135px;
+}
+
+.heart{
+    color: rgba(194, 184, 184, 0.404);
+}
+
+.heart:hover{
+    color: red;
+}
+
+#section2 .view{
+    text-align: center;
+    display: block;
+    font-weight: 500;
+    color: #eee;
+    background-color: rgba(18, 82, 156, 0.863);
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+#section2 .view:hover{
+    background-color: rgb(18, 82, 156);
+}
+
+#section2 .shop{
+    text-align: center;
+    display: block;
+    font-weight: 500;
+    color: #eee;
+    background-color: rgba(0, 128, 0, 0.788);
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+#section2 .shop:hover{
+    background-color: rgb(0, 128, 0);
+}
+
+#section2 .stock{
+    text-align: center;
+    display: block;
+    font-weight: 500;
+    color: #eee;
+    background-color: rgba(243, 10, 10, 0.863);
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+#section2 .stock:hover{
+    cursor: not-allowed;
+}
+
+#section3 .pro{
+    margin-top: 100px;
+}
+
+#section3 .bg-custom{
+    background-color: rgb(223, 223, 240);
+}
+
+#section3 .sug{
+    border-left: 4px solid rgb(24, 216, 24);
+}
+
+#section4 ul li a{
+    text-decoration: none;
+    color: rgba(109, 89, 89, 0.815);
+}
+
+#section4 ul li a:hover{
+    color: rgb(109, 89, 89);
+}
+
+#section4 ul{
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+#section4 ul li{
+    display: inline;
+    padding: 45px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: rgba(56, 52, 52, 0.781);
+}
+
+footer ul li a:hover{
+    text-decoration: none;
+    color: rgb(56, 52, 52);
+}
+
+footer ul{
+    text-align: center;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+footer ul li{
+    display: inline;
+    margin: 25px;
+}

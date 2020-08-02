@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Font awesome Icons -->  
+    <script src="https://kit.fontawesome.com/6df45906ec.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="logo" href="Images/t-logo.png" sizes="16x9">
+    <title>StockPile | Online store</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet"  type="text/css" href="styles.css">
+    <link rel="stylesheet"  type="text/css" href="query.css">
+</head>
+<body>
+    
+    <!-- Navbar Starts -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+
+        <!-- Creating Toggler Icon -->
+        <button class="navbar-toggler ml-auto mb-3 bg-light" type="button" data-toggle="collapse" data-target="#dashboardMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menus -->
+        <div class="collapse navbar-collapse" id="dashboardMenu">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <!-- Sidebar -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 fixed-top sidebar">
+                        <a href="#" class="navbar-brand d-block mx-auto text-center py-1 mb-1 bottom-border">
+                            <img src="Images/logo.png" class="d-xl-none" alt="logo">
+                            <h3 class="d-none d-xl-block text-light"><em><strong>S</strong>tock<strong>P</strong>ile</em></h3>
+                        </a>
+                        <div class="pb-2 bottom-border">
+                            <img src="Images/1.jpg" alt="profile" class="rounded-circle mr-3" width="50">
+                            <a href="#" class="text-white text-center name">Prem</a>
+                        </div>
+                        <ul class="navbar-nav flex-column mt-4">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white p-3 sidebar-link mb-1 active">
+                                    <i class="fas fa-home fa-lg mr-3 text-light"></i>Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white p-3 sidebar-link mb-1">
+                                    <i class="fas fa-user fa-lg mr-3 text-light"></i>Profile
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white p-3 sidebar-link mb-1">
+                                    <i class="fas fa-calendar-day fa-lg mr-3 text-light"></i>Todays Deals
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white p-3 sidebar-link mb-1">
+                                    <i class="fas fa-filter fa-lg mr-3 text-light"></i>Category
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white p-3 sidebar-link mb-1">
+                                    <i class="fas fa-shopping-cart fa-lg mr-3 text-light"></i>Your Orders
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white p-3 sidebar-link mb-1">
+                                    <i class="fas fa-gift fa-lg mr-3 text-light"></i>Offers
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white p-3 sidebar-link mb-1">
+                                    <i class="fas fa-heart fa-lg mr-3 text-light"></i>Wishlist
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white p-3 sidebar-link mb-1">
+                                    <i class="fas fa-cog fa-lg mr-3 text-light"></i>Settings
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white p-3 sidebar-link mb-1">
+                                    <i class="fas fa-phone-alt fa-lg mr-3 text-light"></i>Customer Services
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tob bar -->
+                    <div class="col-xl-10 col-lg-9 col-md-8 fixed-top bg-light py-2 top-bar ml-auto">
+                        <div class="row align-items-center">
+                            <div class="col-xl-3 col-lg-2 col-md-2">
+                                <h4 class="text-dark mb-0 font-weight-light">DASHBOARD</h4>
+                            </div>
+                            <div class="col-xl-4 col-lg-5 col-md-4 ml-auto">
+                                <form>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control search text-dark" placeholder="Search">
+                                        <button class="btn btn-light search-btn">
+                                            <i class="fa fa-search text-danger"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-xl-3 col-lg-2 col-md-2">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item icon-notify">
+                                        <a href="#" class="nav-link icon-notify-link"><i class="fas fa-comments text-muted fa-lg"></i></a>
+                                    </li>
+                                    <li class="nav-item icon-notify">
+                                        <a href="#" class="nav-link icon-notify-link"><i class="fas fa-bell text-muted fa-lg"></i></a>
+                                    </li>
+                                    <li class="nav-item ml-md-auto dropleft">
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-ellipsis-v text-muted fa-lg"></i></a>
+                                        <div class="dropdown-menu bg-dark">
+                                            <a href="#" class="dropdown-item text-success font-weight-bold">Cart</a>
+                                            <a href="#" class="dropdown-item text-success font-weight-bold">Notifications</a>
+                                            <a href="#" class="dropdown-item text-success font-weight-bold">Report</a>
+                                            <a href="#" class="dropdown-item text-success font-weight-bold" data-toggle="modal" data-target="#signout">Sign Out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modals -->
+    <div class="modal fade" id="signout">
+        <div class="modal-dialog bg-light">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Do you really want to sign out?</h4>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    Confirm by pressing the sign out button.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-info text-light" data-dismiss="modal">Cancel</button>
+                    <button class="btn btn-info text-light" data-dismiss="modal">Sign Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Best Sales -->
+    <section id="section1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-10 col-lg-9 col-md-8 section1-content ml-auto">
+                    <div class="row mt-5">
+                        <div class="mx-auto my-4">
+                            <h2 class="text-muted font-weight-light">Our top sales from different categories</h2>
+                        </div>
+                    </div>
+                    <div class="row">   
+                        <div class="col-xl-3 col-md-5 col-sm-12 mx-auto">
+                            <div class="card my-2">
+                                <img src="Images/2.png" alt="mobile" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        <a href="#" class="heart"><i class="fas fa-heart fa-2x"></i></a>
+                                        <h2>OnePlus 8 Pro</h2>
+                                        <p class="card-text"><strong>Memory storage: </strong>8GB RAM + 128GB Storage</p>
+                                        <p class="card-text"><strong>M.R.P: </strong><strike>&#8377;53,999.00</strike></p>
+                                        <p class="card-text"><strong>Deal Price: </strong>&#8377;47,999.00</p>
+                                        <p class="card-text"><strong>You save: </strong>&#8377;6,000.00</p>
+                                        <p class="card-text"><strong>Delivery by: </strong>Sunday, Aug 9</p>
+                                        <p class="card-text review"><strong>Rating: </strong><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a href="#" class="buy">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-5 col-sm-12 mx-auto">
+                            <div class="card my-2">
+                                <img src="Images/3.png" alt="mobile" class="card-img-top washing-machine">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        <a href="#" class="heart"><i class="fas fa-heart fa-2x"></i></a>
+                                        <h2>Samsung Washing Machine</h2>
+                                        <p class="card-text"><strong>Capacity: </strong>7kg, Fully-Automatic Front Loading</p>
+                                        <p class="card-text"><strong>M.R.P: </strong>&#8377;38,500.00</p>
+                                        <p class="card-text"><strong>Delivery by: </strong>Saturday, Aug 16</p>
+                                        <p class="card-text review"><strong>Rating: </strong><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a href="#" class="buy">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-5 col-sm-12 mx-auto">
+                            <div class="card my-2">
+                                <img src="Images/5.png" alt="mobile" class="card-img-top adidas">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        <a href="#" class="heart"><i class="fas fa-heart fa-2x"></i></a>
+                                        <h2>Adidas Sports Shoes</h2>
+                                        <p class="card-text"><strong>Size: </strong>8 UK</p>
+                                        <p class="card-text"><strong>Colour: </strong>Black A0QM/White 01F7</p>
+                                        <p class="card-text"><strong>M.R.P: </strong>&#8377;1,619.00</p>
+                                        <p class="card-text"><strong>Delivery by: </strong>Sunday, Aug 9</p>
+                                        <p class="card-text review"><strong>Rating: </strong><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a href="#" class="buy">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-5 col-sm-12 mx-auto">
+                            <div class="card my-2">
+                                <img src="Images/4.png" alt="mobile" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        <a href="#" class="heart"><i class="fas fa-heart fa-2x"></i></a>
+                                        <h2>LG 4K Ultra HD OLED TV</h2>
+                                        <p class="card-text"><strong>Size: </strong>55 inches , 3840x2160 Resolution</p>
+                                        <p class="card-text"><strong>M.R.P: </strong><strike>&#8377;2,29,999.00</strike></p>
+                                        <p class="card-text"><strong>Deal Price: </strong>&#8377;1,27,300.00(45%)</p>
+                                        <p class="card-text"><strong>Delivery by: </strong>Tuesday, Aug 4</p>
+                                        <p class="card-text review"><strong>Rating: </strong><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a href="#" class="buy">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+    <!-- Upcoming Products -->
+    <section id="section2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-10 col-lg-9 col-md-8 section2-content ml-auto">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-12 col-sm-12 mx-auto sec2-products">
+                            <h2 class="text-muted font-weight-light text-center my-4">Upcoming Products</h2>
+                            <table class="table table-striped text-dark bg-light table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Company</th>
+                                        <th>Product</th>
+                                        <th>Model</th>
+                                        <th>Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Sony</td>
+                                        <td>Mobile</td>
+                                        <td>Xperia X Compact</td>
+                                        <td><a href="#" class="view">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Xiomi</td>
+                                        <td>Tv</td>
+                                        <td>5 Pro</td>
+                                        <td><a href="#" class="view">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Apple</td>
+                                        <td>Mobile</td>
+                                        <td>iPhone 12</td>
+                                        <td><a href="#" class="view">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Whirlpool</td>
+                                        <td>Refrigerator</td>
+                                        <td>305 IMFRESH PRM</td>
+                                        <td><a href="#" class="view">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Dell</td>
+                                        <td>Laptop</td>
+                                        <td>Dell 15 9510</td>
+                                        <td><a href="#" class="view">View</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <nav>
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">
+                                            <span>&laquo;</span>    
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">
+                                            <span>&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-xl-6 col-md-12 col-sm-12 mx-auto offers">
+                            <h2 class="text-muted font-weight-light text-center my-4">Offers on different categories</h2>
+                            <table class="table table-striped text-white bg-primary">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Category</th>
+                                        <th>Discount</th>
+                                        <th>Ends</th>
+                                        <th>Buy</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Gadgets</td>
+                                        <td>20%, 40%</td>
+                                        <td>05/09/2020</td>
+                                        <td><a href="#" class="shop">Shop Now</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Fashion</td>
+                                        <td>Flat 50%, 60%</td>
+                                        <td>09/09/2020</td>
+                                        <td><a href="#" class="shop">Shop Now</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Electronics</td>
+                                        <td>20%</td>
+                                        <td>03/09/2020</td>
+                                        <td><a href="#" class="stock">Out of Stock</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Home Appliances</td>
+                                        <td>10%, 20%, 30%</td>
+                                        <td>05/09/2020</td>
+                                        <td><a href="#" class="shop">Shop Now</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Toys</td>
+                                        <td>40%</td>
+                                        <td>04/09/2020</td>
+                                        <td><a href="#" class="stock">Out of Stock</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <nav>
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">
+                                            <span>&laquo;</span>    
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">
+                                            <span>&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress & Suggestions -->
+    <section id="section3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-10 col-lg-9 col-md-8 section3-content ml-auto">
+                    <div class="row">
+                        <div class="col-xl-6 col-12 mx-auto pro">
+                            <div class="card bg-custom text-dark">
+                                <div class="card-title">
+                                    <h2 class="font-weight-light pt-3 text-center">Conversion rates in different browsers</h2>
+                                </div>
+                                <div class="card-body">
+                                    <div class="py-3">
+                                        <h4>Google Chrome</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info progress-bar-striped" style="width: 90%">90%</div>
+                                        </div>
+                                    </div>    
+                                    <div class="py-3">
+                                        <h4>Mozilla Firefox</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-dark progress-bar-striped" style="width: 78%">78%</div>
+                                        </div>
+                                    </div>
+                                    <div class="py-3">
+                                        <h4>Safari</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-warning progress-bar-striped" style="width: 55%">55%</div>
+                                        </div>
+                                    </div>
+                                    <div class="py-3">
+                                        <h4>Internet Explorer</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-danger progress-bar-striped" style="width: 40%">40%</div>
+                                        </div>
+                                    </div>
+                                    <div class="py-3">
+                                        <h4>Microsoft Edge</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-primary progress-bar-striped" style="width: 12%">12%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-12 mx-auto">
+                            <h2 class="text-muted font-weight-light text-center my-4">Suggestions for you</h2>
+                            <div class="container-fluid bg-white">
+                                <div class="row py-3 mb-4 sug align-items-center">
+                                    <div class="col-1">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="col-sm-9 col-8">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" data-toggle="tooltip" title="pin" data-placement="top"><i class="fas fa-thumbtack fa-lg text-success"></i></a>
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" data-toggle="tooltip" title="delete" data-placement="top"><i class="fas fa-trash-alt fa-lg text-success"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid bg-white">
+                                <div class="row py-3 mb-4 sug align-items-center">
+                                    <div class="col-1">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="col-sm-9 col-8">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" data-toggle="tooltip" title="pin" data-placement="top"><i class="fas fa-thumbtack fa-lg text-success"></i></a>
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" data-toggle="tooltip" title="delete" data-placement="top"><i class="fas fa-trash-alt fa-lg text-success"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid bg-white">
+                                <div class="row py-3 mb-4 sug align-items-center">
+                                    <div class="col-1">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="col-sm-9 col-8">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" data-toggle="tooltip" title="pin" data-placement="top"><i class="fas fa-thumbtack fa-lg text-success"></i></a>
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" data-toggle="tooltip" title="delete" data-placement="top"><i class="fas fa-trash-alt fa-lg text-success"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid bg-white">
+                                <div class="row py-3 mb-4 sug align-items-center">
+                                    <div class="col-1">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="col-sm-9 col-8">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" data-toggle="tooltip" title="pin" data-placement="top"><i class="fas fa-thumbtack fa-lg text-success"></i></a>
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" data-toggle="tooltip" title="delete" data-placement="top"><i class="fas fa-trash-alt fa-lg text-success"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid bg-white">
+                                <div class="row py-3 mb-4 sug align-items-center">
+                                    <div class="col-1">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="col-sm-9 col-8">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" data-toggle="tooltip" title="pin" data-placement="top"><i class="fas fa-thumbtack fa-lg text-success"></i></a>
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" data-toggle="tooltip" title="delete" data-placement="top"><i class="fas fa-trash-alt fa-lg text-success"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid bg-white">
+                                <div class="row py-3 mb-4 sug align-items-center">
+                                    <div class="col-1">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="col-sm-9 col-8">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" data-toggle="tooltip" title="pin" data-placement="top"><i class="fas fa-thumbtack fa-lg text-success"></i></a>
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" data-toggle="tooltip" title="delete" data-placement="top"><i class="fas fa-trash-alt fa-lg text-success"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid bg-white d-none">
+                                <div class="row py-3 mb-4 sug align-items-center">
+                                    <div class="col-1">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="col-sm-9 col-8">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" data-toggle="tooltip" title="pin" data-placement="top"><i class="fas fa-thumbtack fa-lg text-success"></i></a>
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" data-toggle="tooltip" title="delete" data-placement="top"><i class="fas fa-trash-alt fa-lg text-success"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid bg-white d-none">
+                                <div class="row py-3 mb-4 sug align-items-center">
+                                    <div class="col-1">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="col-sm-9 col-8">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" data-toggle="tooltip" title="pin" data-placement="top"><i class="fas fa-thumbtack fa-lg text-success"></i></a>
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="#" data-toggle="tooltip" title="delete" data-placement="top"><i class="fas fa-trash-alt fa-lg text-success"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Comments & Feedback-->
+    <section id="section4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-10 col-lg-9 col-sm-8 ml-auto">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-12 col-sm-12 mx-auto mt-2">
+                            <h2 class="font-weight-light text-muted my-4 text-center">Comments</h2>
+                            <div class="card">
+                                <div class="card-header">
+                                    <button class="btn btn-block text-left text-light bg-dark" data-toggle="collapse" data-target="#comment1">
+                                        <img src="Images/6.jpg" alt="alli" class="rounded-circle mr-3" width="50">
+                                        Alli posted a new comment
+                                    </button>
+                                </div>
+                                <div class="card-body collapse" id="comment1">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ab saepe quae, tempore aperiam quas aliquid rerum asperiores! Quos sequi, exercitationem cum sed placeat eius.</p>
+                                </div>
+                            </div>
+                            <div class="card mt-1">
+                                <div class="card-header">
+                                    <button class="btn btn-block text-left text-light bg-dark" data-toggle="collapse" data-target="#comment2">
+                                        <img src="Images/7.jpg" alt="alli" class="rounded-circle mr-3" width="50">
+                                        Manoj posted a new comment
+                                    </button>
+                                </div>
+                                <div class="card-body collapse" id="comment2">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ab saepe quae, tempore aperiam quas aliquid rerum asperiores! Quos sequi, exercitationem cum sed placeat eius.</p>
+                                </div>
+                            </div>
+                            <div class="card mt-1">
+                                <div class="card-header">
+                                    <button class="btn btn-block text-left text-light bg-dark" data-toggle="collapse" data-target="#comment3">
+                                        <img src="Images/8.jpg" alt="alli" class="rounded-circle mr-3" width="50">
+                                        Bhavi posted a new comment
+                                    </button>
+                                </div>
+                                <div class="card-body collapse" id="comment3">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ab saepe quae, tempore aperiam quas aliquid rerum asperiores! Quos sequi, exercitationem cum sed placeat eius.</p>
+                                </div>
+                            </div>
+                            <div class="card mt-1">
+                                <div class="card-header">
+                                    <button class="btn btn-block text-left text-light bg-dark" data-toggle="collapse" data-target="#comment4">
+                                        <img src="Images/9.jpg" alt="alli" class="rounded-circle mr-3" width="50">
+                                        Saketh posted a new comment
+                                    </button>
+                                </div>
+                                <div class="card-body collapse" id="comment4">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ab saepe quae, tempore aperiam quas aliquid rerum asperiores! Quos sequi, exercitationem cum sed placeat eius.</p>
+                                </div>
+                            </div>
+                            <div class="card mt-1">
+                                <div class="card-header">
+                                    <button class="btn btn-block text-left text-light bg-dark" data-toggle="collapse" data-target="#comment5">
+                                        <img src="Images/10.jpg" alt="alli" class="rounded-circle mr-3" width="50">
+                                        Meenu posted a new comment
+                                    </button>
+                                </div>
+                                <div class="card-body collapse" id="comment5">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ab saepe quae, tempore aperiam quas aliquid rerum asperiores! Quos sequi, exercitationem cum sed placeat eius.</p>
+                                </div>
+                            </div>
+                            <div class="card mt-1">
+                                <div class="card-header">
+                                    <button class="btn btn-block text-left text-light bg-dark" data-toggle="collapse" data-target="#comment6">
+                                        <img src="Images/11.jpg" alt="alli" class="rounded-circle mr-3" width="50">
+                                        Karthik posted a new comment
+                                    </button>
+                                </div>
+                                <div class="card-body collapse" id="comment6">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ab saepe quae, tempore aperiam quas aliquid rerum asperiores! Quos sequi, exercitationem cum sed placeat eius.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-12 col-sm-12 mx-auto">
+                            <h2 class="font-weight-light text-muted my-4 text-center">Post a comment</h2>
+                            <div class="card py-3">
+                                <div class="card-body">
+                                    <div class="card-title text-dark text-center">
+                                        <h4 class="font-weight-light">Share your words</h4>
+                                        <ul class="post">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fas fa-pencil-alt mr-1 text-success"></i>
+                                                    Status
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fas fa-camera mr-1 text-primary"></i>
+                                                    Photo
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fas fa-map-marker-alt mr-1 text-info"></i>
+                                                    Check-1n
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control py-2" placeholder="Write a comment...">
+                                            <button class="btn btn-block bg-success text-light my-4">Post</button>
+                                        </div>
+                                    </form>
+                                    <div class="row">
+                                        <div class="col-xl-6 col-sm-12 text-center my-2">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <i class="fas fa-calendar-alt fa-6x text-warning"></i>
+                                                </div>
+                                                <h5 class="text-dark font-weight-light">Sunday, Aug 2</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-sm-12 text-center my-2">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <i class="far fa-clock fa-6x text-dark"></i>
+                                                </div>
+                                                <h5 class="text-dark font-weight-light">09.30 AM</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-10 col-md-9 col-sm-8 ml-auto bg-light">
+                    <ul class="footer-links">
+                        <li><a href="#"><img src="Images/alternate.png" alt="logo"></a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                    <p class="text-center text-dark">Copyright&copy;2020</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
